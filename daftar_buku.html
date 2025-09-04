@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabel Buku</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 24px; background: #f7f7f8; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+    caption { text-align: left; padding: 12px 16px; font-weight: 600; }
+    th, td { padding: 12px 16px; border-bottom: 1px solid #e6e6e6; text-align: left; }
+    th { background: #f2f4f7; font-weight: 700; }
+    tbody tr:hover { background: #fafafa; }
+    .num { text-align: center; white-space: nowrap; }
+    .harga { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b0b0c; color: #eaeaea; }
+      table { background: #121214; }
+      th { background: #1a1b1e; }
+      th, td { border-bottom-color: #2a2a2e; }
+      tbody tr:hover { background: #17181b; }
+    }
+  </style>
+</head>
+<body>
+  <div class="table-wrap">
+    <table>
+      <caption>Daftar Buku</caption>
+      <thead>
+        <tr>
+          <th>Judul Buku</th>
+          <th class="num">Nomor Buku</th>
+          <th class="harga">Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Belajar Java</td>
+          <td class="num">BK-001</td>
+          <td class="harga">Rp80.000</td>
+        </tr>
+        <tr>
+          <td>Belajar Javascript dasar</td>
+          <td class="num">BK-002</td>
+          <td class="harga">Rp98.500</td>
+        </tr>
+        <tr>
+          <td>Belajar Laravel framework</td>
+          <td class="num">BK-003</td>
+          <td class="harga">Rp89.000</td>
+        </tr>
+        <tr>
+          <td>Belajar HTML dasar</td>
+          <td class="num">BK-004</td>
+          <td class="harga">Rp90.000</td>
+        </tr>
+        <tr>
+          <td>Belajar tailwind css</td>
+          <td class="num">BK-005</td>
+          <td class="harga">Rp75.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
